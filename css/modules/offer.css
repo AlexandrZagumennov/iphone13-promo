@@ -1,0 +1,49 @@
+.offer__container {
+	padding: 30px;
+	margin: 0 -30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 820px;
+	background-image: url('../../img/offer/phones.jpg');
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.offer__main-title {
+	font-size: 20px;
+	line-height: 23px;
+	font-weight: 400;
+	margin-bottom: 24px;
+}
+
+.offer__title {
+	font-weight: 500;
+	font-size: 34px;
+	line-height: 41px;
+	margin-bottom: 24px;
+	text-align: center;
+}
+
+.offer__price {
+	line-height: 23px;
+	font-weight: 400;
+	margin-bottom: 32px;
+}
+
+@media (max-width: 800px) {
+	.offer__container {
+		min-height: 720px;
+		background-size: 960px;
+	}
+}
+
+@media (max-width: 480px) {
+	.offer__title {
+		font-size: 24px;
+	}
+
+	.offer__price {
+		font-size: 18px;
+	}
+}

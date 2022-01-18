@@ -13,7 +13,7 @@ body {
 	min-width: 320px;
 	min-height: 100vh;
 	font-family: 'SF UI Text', sans-serif;
-	/*font-size: 16px;*/
+	font-size: 20px;
 	font-weight: 300;
 	background-color: #fff;
 	color: #000;
@@ -69,9 +69,9 @@ iframe {
 	overflow: hidden;
 }
 
-/*.container {
-	max-width: 1300px;
+.container {
+	max-width: 1350px;
 	margin: 0 auto;
-	padding: 0 60px;
-}*/
+	padding: 0 30px;
+}
 

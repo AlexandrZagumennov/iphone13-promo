@@ -3,3 +3,8 @@
 @import url(fonts.css);
 
 /*Модули*/
+@import url(modules/header.css);
+@import url(modules/navigation.css);
+@import url(modules/main.css);
+@import url(modules/offer.css);
+@import url(modules/btn.css);
