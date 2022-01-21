@@ -4,12 +4,21 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>iPhone 13</title>
-	<link rel="stylesheet" href="css/index.css">
+
 	<link rel="icon" type="image/svg+xml" href="img/icons/favicon.svg">
+
 	<link rel="preload" href="fonts/SFUIText-Light.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="fonts/SFUIText-Regular.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="fonts/SFUIText-Medium.woff2" as="font" type="font/woff2" crossorigin>
+
+	<link rel="stylesheet" href="css/choices.min.css">
+	<link rel="stylesheet" href="css/index.css">
+
+	<script defer src="js/choices.min.js"></script>
+	<script defer src="js/jquery-3.6.0.min.js"></script>
+	<script defer src="js/index.js"></script>
 
 </head>
 <body>
@@ -148,32 +157,32 @@
 			<div class="container">
 				<h2 class="order__title">Оформить предзаказ</h2>
 
-				<form action="#" class="order__form form">
+				<form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="order__form form" id="form-order">
 					<fieldset class="form__box">
 						<legend class="form__title-box">Персональные данные</legend>
 
-						<label for="fullName" class="form__label">ФИО</label>
-						<input type="text" class="form__input" id="fullName" name="fullName">
+						<label for="fullName" class="form__label">ФИО <sup>*</sup> </label>
+						<input type="text" class="form__input" id="fullName" name="fullName" required>
 
-						<label for="phone" class="form__label">Телефон</label>
-						<input type="tel" class="form__input" id="phone" name="phone">
+						<label for="phone" class="form__label">Телефон<sup>*</sup> </label>
+						<input type="tel" class="form__input" id="phone" name="phone" required>
 
-						<label for="email" class="form__label">E-mail</label>
-						<input type="email" class="form__input" id="email" name="email">
+						<label for="email" class="form__label">E-mail<sup>*</sup> </label>
+						<input type="email" class="form__input" id="email" name="email" required>
 
 					</fieldset>
 
 					<fieldset class="form__box">
 						<legend class="form__title-box">Адрес доставки</legend>
 
-						<label for="city" class="form__label">Город</label>
-						<input type="text" class="form__input" id="city" name="city">
+						<label for="city" class="form__label">Город<sup>*</sup> </label>
+						<input type="text" class="form__input" id="city" name="city" required>
 
-						<label for="post-index" class="form__label">Индекс</label>
-						<input type="text" class="form__input" id="post-index" name="post-index">
+						<label for="post-index" class="form__label">Индекс<sup>*</sup> </label>
+						<input type="text" class="form__input" id="post-index" name="post-index" required>
 
-						<label for="adress" class="form__label">Адрес</label>
-						<input type="text" class="form__input" id="adress" name="adress">
+						<label for="adress" class="form__label">Адрес<sup>*</sup> </label>
+						<input type="text" class="form__input" id="adress" name="adress" required>
 						
 					</fieldset>
 
@@ -208,25 +217,24 @@
 						<legend class="form__title-box">Аксессуары</legend>
 
 						<label class="form__label checkbox">
-							<input type="checkbox" name="accesories" id="case">Чехол
+							<input class="checkbox__input" type="checkbox" name="accesories" value="case">Чехол
 						</label>
 
 						<label class="form__label checkbox">
-							<input type="checkbox" name="accesories" id="AirPods">Наушники AirPods 3 
+							<input class="checkbox__input" type="checkbox" name="accesories" value="AirPods">Наушники AirPods 3 
 						</label>
 
 						<label class="form__label checkbox">
-							<input type="checkbox" name="accesories" id="glass">Защитное стекло
+							<input class="checkbox__input" type="checkbox" name="accesories" value="glass">Защитное стекло
 						</label>
 
 						<label class="form__label checkbox">
-							<input type="checkbox" name="accesories" id="MagSafe">Зарядное устройство MagSafe
+							<input class="checkbox__input" type="checkbox" name="accesories" value="MagSafe">Зарядное устройство MagSafe
 						</label>
 					</fieldset>
-
-					<button class="form__submit btn">Оформить </button>
-
 				</form>
+
+				<button type="submit" class="form__submit btn" form="form-order">Оформить </button>
 			</div>
 		</section>
 	</main>
@@ -235,12 +243,12 @@
 		<div class="container">
 			<div class="footer__container">
 				<div class="footer__item">
-					<p class="footer__text">© iPhone 13 Promo, 2021</p>
+					<p class="footer__text">© iPhone 13 Promo, 2022</p>
 				</div>
 
 				<div class="footer__item">
 					<p class="footer__text">Design by Anastasia Ilina</p>
-					<a href="mailto:ilina9825@gmail.com" class="footer__link">ilina9825@gmail.com</a>
+					<a href="mailto:ilina9825@gmail.com" class="footer__link" target="_blank">ilina9825@gmail.com</a>
 				</div>
 			</div>
 		</div>

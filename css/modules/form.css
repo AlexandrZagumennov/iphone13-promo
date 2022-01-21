@@ -2,8 +2,8 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	/*align-items: center;*/
 	gap: 60px 30px;
+	margin-bottom: 90px;
 }
 
 .form__box {
@@ -58,11 +58,9 @@
 	box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.6);
 }
 
-.form__select {
-}
-.form__option {
-}
 .form__submit {
+	display: block;
+	margin: 0 auto;
 }
 
 @media (max-width: 800px) {

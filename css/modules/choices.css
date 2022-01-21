@@ -1,0 +1,92 @@
+/* стилизация select*/  
+
+.choices {
+	max-width: 800px;
+	height: 90px;
+}
+
+.choices:hover {
+	box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.choices:focus {
+	box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+.choices__inner {
+	height: 100%;
+	font-size: 24px;
+	display: flex;
+	align-items: center;
+	padding: 0 15px;
+	border: none;
+	background-color: #ffffff;
+	border-radius: 20px;
+	outline: none;
+}
+
+.is-open .choices__inner {
+	position: relative;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	z-index: 1;
+}
+
+.is-open .choices__list--dropdown {
+	border-top: 0px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border: none;
+	box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.choices[data-type*=select-one]:after {
+	height: 9px;
+	width: 9px;
+	border-color: transparent transparent #000000 #000000;
+	border-width: 9px;
+	margin-top: -15px; 
+	margin-right: 35px;  
+	transform: rotate(-45deg);
+	z-index: 1;
+	transition: border-color 0.15s ease-in-out, margin-top 0.15s ease-in-out;
+}
+
+.choices[data-type*=select-one].is-open:after {
+	border-color: #000000 #000000 transparent transparent;
+}
+
+
+.choices__list--dropdown .choices__item {  
+	font-size: 16px;  
+	padding: 20px 15px;
+}
+
+.choices__list--dropdown {
+	margin-top: -5px;
+	z-index: 10;
+}
+
+@media (max-width: 800px) {
+.choices {
+	height: 60px;
+}
+
+.choices[data-type*=select-one]:after {
+	height: 6px;
+	width: 6px;
+	border-width: 6px;
+	margin-top: -10px;
+	margin-right: 10px;
+}
+
+.choices__inner {
+	font-size: 16px;
+	padding: 10px;
+}
+}
