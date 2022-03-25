@@ -17,6 +17,9 @@
 * кастомные чекбоксы.
 
 ### Добавил в проект самостоятельно  
-- плавный скролл с использованием seamless-scroll-polyfill.
+- плавный скролл с использованием seamless-scroll-polyfill.  
+
+
+<span style="color:blue">some *blue* text</span>.
 
 
