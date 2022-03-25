@@ -18,8 +18,8 @@
 
 ### Добавил в проект самостоятельно  
 - плавный скролл с использованием seamless-scroll-polyfill.  
-
-
-<span style="color:blue">some *blue* text</span>.
+- 
+### Ссылка на сайт  
+<https://alexandrzagumennov.github.io/iphone13-promo>
 
 
